@@ -50,8 +50,7 @@ function Home() {
   fetch('https://mymovies-backend-gamma.vercel.app/movies')
   .then(response => response.json())
   .then(data => {
-    setIndexMovie(data.movies.results)
-    console.log("click", data.movies.results )
+    setIndexMovie(data.movies)
   });
 }, []);
 
